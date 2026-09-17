@@ -37,28 +37,3 @@ Model (`OCRModel`) dibangun dengan arsitektur dua cabang (*multi-modal*):
 Kedua fitur ini kemudian digabungkan (*concatenated*) sebelum dilewatkan ke layer *Classifier* akhir untuk menghasilkan tebakan label (Primer atau Sekunder).
 
 ---
-
-## 🚀 Cara Menjalankan Proyek
-
-Proyek ini dapat dijalankan menggunakan **Google Colab** (Sangat disarankan) atau **Jupyter Notebook** di komputer lokal.
-
-### Opsi A: Menggunakan Google Colab (Online / Tidak perlu install)
-1. Buka [Google Colab](https://colab.research.google.com/).
-2. Pilih menu **File > Upload notebook** dan unggah file `notebook.ipynb`.
-3. Di panel sebelah kiri Colab, klik ikon **Folder (Files)**.
-4. Unggah (upload) file-file pendukung berikut ke dalam *session storage* Colab:
-   * `ocr_insurance_dataset.pkl`
-   * `project_utils.py`
-5. Jalankan *cell* kode dari atas ke bawah secara berurutan dengan menekan tombol **Play** atau menekan `Shift + Enter`.
-
-### Opsi B: Menggunakan Jupyter Notebook (Lokal)
-1. Pastikan Python dan Jupyter Notebook sudah terinstal di komputer Anda. Anda juga membutuhkan *library* pendukung:
-   ```bash
-   pip install torch torchvision numpy matplotlib
-   ```
-2. Buka terminal atau *command prompt* di dalam folder proyek ini (folder yang berisi semua file).
-3. Ketik perintah `jupyter notebook` dan tekan Enter.
-4. Browser akan terbuka. Klik file `notebook.ipynb`.
-5. Pada menu atas, klik **Cell > Run All** untuk menjalankan seluruh kode dari atas ke bawah.
-
----
